@@ -1,0 +1,46 @@
+.button-one__pretitle {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    color: var(--main-white-color);
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .button-one {
+    background-color: var(--main-footer-color);
+    padding: 200px 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+  }
+  
+  .button-one__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    min-width: 216px;
+    height: 50px;
+    border: none;
+    outline: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }

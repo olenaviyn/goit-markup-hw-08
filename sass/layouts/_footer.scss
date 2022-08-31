@@ -1,0 +1,145 @@
+.studio-logofoot {
+  color: var(--main-white-color);
+}
+
+.map-google {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+}
+
+.footmain {
+  padding: 60px;
+  background-color: #2f303a;
+}
+
+.web {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footmain-adress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .footmain-adress {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footmain-join {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.welcome-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--main-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.team-soc-join {
+  @extend %alight-list;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.team-soc-icon1 {
+  @extend %alight-list;
+  justify-content: center;
+  fill: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .team-soc-join:hover & .team-soc-join:focus & {
+    fill: #ffffff;
+  }
+}
+
+.footer-form > .footer-form__button {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__icon {
+  display: inline-block;
+  margin-left: 10px;
+  fill: var(--main-white-color);
+}
+
+.footer-form {
+  display: flex;
+  width: 570px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--main-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.footer-form input[type="email"] {
+  min-width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
