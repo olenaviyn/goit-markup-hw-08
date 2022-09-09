@@ -21,3 +21,10 @@ cursor: pointer;
 footer {
   font-style: normal;
 }
+
+img {
+  display: block;
+  // width: 100%;
+  max-width: 100%;
+  height: auto;
+}

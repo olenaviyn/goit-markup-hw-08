@@ -1,7 +1,11 @@
 .whoweare {
   display: flex;
   background-color: var(--main-white-color);
-}
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  
 
 .team-title {
   font-weight: 700;

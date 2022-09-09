@@ -28,6 +28,9 @@
 
 .header-logo {
   margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin: 0px;
+  }
 }
 
 .navigation__list {
