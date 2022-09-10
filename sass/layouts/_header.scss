@@ -6,7 +6,6 @@
 
 .header__container {
   display: flex;
-
 }
 
 .logo {
@@ -27,15 +26,32 @@
 }
 
 .header-logo {
-  margin-right: 93px;
+  // margin-right: 93px;
   @media screen and (max-width: 767px) {
     margin: 0px;
   }
 }
 
+.navigation {
+    display: none;
+    @mixin tablet {
+      display: block; 
+    }
+    @mixin desktop {
+      display: block; 
+    }
+  }
+  
+
 .navigation__list {
   display: flex;
   align-items: center;
+    @mixin tablet {
+      display: block; 
+    }
+    @mixin desktop {
+      display: block; 
+    }
 }
 
 .navigation__item:not(:last-child) {
@@ -54,10 +70,10 @@
   &:hover,
   &:focus {
   color: var(--accent-color);
-}
-}
+}}
 
 .connect {
+  display: none;
   margin-left: auto;
 }
 
@@ -132,3 +148,118 @@
     fill: #2196f3;
   }
 }
+
+.menu__open__btn {
+  margin-left: auto;
+}
+
+.open__icon {
+  fill: #212121;
+  background-color: #ffffff;
+  border: none;
+}
+
+.mob__menu {
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  >.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.menu__close__btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 21px;
+}
+
+.close__icon {
+  display: block;
+  fill: currentColor;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 4px;
+  border-radius: 50%;
+}
+
+.mob__menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob__menu__link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.6;
+letter-spacing: 0.02em;
+color: #212121;;
+}
+
+.mob__connect {
+  margin-bottom: 64px;
+
+}
+
+.mob__connect__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+
+.mob__connect__mail {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #757575;
+
+}
+
+.mob__connect__tell {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em; 
+  color: #2196F3;
+
+}
+
+.mob__soc__list {
+  display: flex;
+
+}
+
+.mob__soc__item:not(last-child) {
+  margin-right: 20px;
+}
+
+.mob__soc__link { 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.2x;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+// @mixin tablet {
+//   &:hover,
+//   &:focus {
+//   color: var(--accent-color);
+//   }}
+// @mixin desktop {
+// &:hover,
+// &:focus {
+// color: var(--accent-color);

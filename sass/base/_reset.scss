@@ -5,13 +5,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
+  // margin: 0px;
 }
 
-ul {
-  margin: 0px;
-  padding-left: 0px;
-}
+// ul {
+//   margin: 0px;
+//   padding-left: 0px;
+// }
 
 .nav-main__link {
 cursor: pointer;
@@ -24,7 +24,7 @@ footer {
 
 img {
   display: block;
-  // width: 100%;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
