@@ -15,6 +15,9 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    margin-right: 15px;
+  }
 }
 
 .web-logo {
@@ -26,18 +29,17 @@
 }
 
 .header-logo {
-  // margin-right: 93px;
-  @media screen and (max-width: 767px) {
-    margin: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 
 .navigation {
     display: none;
-    @mixin tablet {
+    @media screen and (min-width: 768px) {
       display: block; 
     }
-    @mixin desktop {
+    @media screen and (min-width: 1200px) {
       display: block; 
     }
   }
@@ -75,11 +77,21 @@
 .connect {
   display: none;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: 93px;
+  }
 }
 
 .connect__item {
   &:not(:last-child) {
     margin-right: 50px;
+  }
+  @media screen and (min-width: 768px){
+    first-child: {margin-bottom: 10px;}
   }
 }
 
@@ -118,6 +130,10 @@
   &:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 768px){
+  display: flex;
+  align-items: center;
+  }
 }
 
 
@@ -135,7 +151,11 @@
   &:focus {
     color: #2196f3;
   }
-}
+  @media screen and (min-width: 768px){
+    display: flex;
+    }align-items: center;
+  }
+
 
 .connect__icon {
   display: inline-flex;
@@ -150,7 +170,13 @@
 }
 
 .menu__open__btn {
+  display: flex;
+  position: relative;
+  padding: 0;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .open__icon {
@@ -160,7 +186,8 @@
 }
 
 .mob__menu {
-  position: fixed;
+  display: flex;
+  position: absolute;
   background-color: #ffffff;
   z-index: 1;
   top: 0;
