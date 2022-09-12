@@ -125,6 +125,9 @@ body {
 
 @media screen and (min-width: 768x) {
   .header-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-right: 88px;
   }
 }
@@ -175,12 +178,24 @@ body {
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .connect {
   margin-left: auto;
+  padding-top: 0;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .connect {
+    display: block;
     margin-left: 90px;
   }
 }
