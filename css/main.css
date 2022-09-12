@@ -125,9 +125,6 @@ body {
 
 @media screen and (min-width: 768x) {
   .header-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-right: 88px;
   }
 }
@@ -180,8 +177,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
-    position: relative;
-    display: block;
     padding-top: 32px;
     font-size: 14px;
     line-height: 1.14;

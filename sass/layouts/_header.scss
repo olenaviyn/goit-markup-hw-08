@@ -30,7 +30,6 @@
 
 .header-logo {
   @media screen and (min-width: 768x) {
-    display: flex;
     margin-right: 88px;
   }
 
@@ -79,8 +78,6 @@
   color: var(--accent-color);
 }
 @include tablet {
-  position: relative;
-  display: block;
   padding-top: 32px;
   font-size: 14px;
     line-height: 1.14;
