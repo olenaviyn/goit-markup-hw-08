@@ -192,14 +192,19 @@ body {
 }
 @media screen and (min-width: 768px) {
   .connect {
-    display: block;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .connect__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .connect__list {
     display: -webkit-box;
@@ -648,6 +653,10 @@ body {
 }
 
 .button-one__pretitle {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   font-family: "Roboto";
   font-style: normal;
   margin-bottom: 30px;
@@ -664,7 +673,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .button-one__pretitle {
-    margin: 0 auto;
     max-width: 360px;
     font-size: 26px;
     line-height: 1.6;
@@ -672,7 +680,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .button-one__pretitle {
-    margin: 0 auto;
     max-width: 696px;
     font-size: 44px;
   }
@@ -910,6 +917,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-main-color);
+  margin: 0;
 }
 
 .marketing-pre {
@@ -1160,11 +1168,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -1298,7 +1301,6 @@ body {
 }
 
 .footer-form input[type=email] {
-  width: 100%;
   margin-bottom: 20px;
   height: 50px;
   background: inherit;
@@ -1324,10 +1326,25 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-form input[type=email] {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-modal {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 358px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

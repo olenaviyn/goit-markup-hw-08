@@ -18,9 +18,7 @@
   justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+   display: flex;
   }
 }
 
@@ -152,7 +150,6 @@
 
 
 .footer-form input[type="email"] {
-  width: 100%;
   margin-bottom: 20px;
   height: 50px;
   background: inherit;
@@ -169,15 +166,20 @@
     flex-wrap: wrap;}
     width: 450px;
   @media screen and (min-width: 1200px) {
-    display: flex;
     width: 358px;
   }
 }
+  
+.form-modal {
+  @include desktop {
+    display: flex;
+    // width: 570px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  @media screen and (min-width: 1200px) {
-    
-  }
-
+}
 
 .footer-form__button {
   border: 1px solid transparent;

@@ -64,18 +64,20 @@
 }
 
 .button-one__pretitle {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-right: auto;
+    margin-left: auto;
   @media screen and (min-width: 480px){
     // max-width: 360px;
     line-height: 1.6; 
   }
   @media screen and (min-width: 768px){
-    margin: 0 auto;
     max-width: 360px;
     font-size: 26px;
     line-height: 1.6;
   }
   @media screen and (min-width: 1200px){
-    margin: 0 auto;
     max-width: 696px;
     font-size: 44px;
   }

@@ -89,13 +89,15 @@
   padding-top: 0;
   display: none;
   @include tablet
-   { display: block;
-    justify-content: space-evenly;
-    margin-left: auto;
-  }
+  { 
+   display: flex;
+ }
 }
 
 .connect__list {
+  @include tablet
+  { display: flex;
+ }
   @include desktop {
     display: flex;
     align-items: center;
