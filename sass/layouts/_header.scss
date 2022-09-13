@@ -2,12 +2,30 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+  @include mobile {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: auto;
+  }
 }
 
 .header__container {
   display: flex;
   @include tablet {
     margin-left: auto;
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px)
+   {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+@include mobile {
+  justify-content: space-between;
+  align-items: center;
+}
+  @include desktop {
+    display: flexbox;
   }
 }
 
@@ -18,7 +36,7 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  }
+}
 
 .web-logo {
   color: var(--accent-color);
@@ -39,25 +57,25 @@
 }
 
 .navigation {
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: flex; 
-    }
-    @media screen and (min-width: 1200px) {
-      display: block; 
-    }
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 
 .navigation__list {
   display: flex;
   align-items: center;
-    @mixin tablet {
-      display: flex; 
-    }
-    @mixin desktop {
-      display: flex;
-    }
+  @mixin tablet {
+    display: flex;
+  }
+  @mixin desktop {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -75,47 +93,39 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  color: var(--accent-color);
-}
-@include tablet {
-  padding-top: 32px;
-  font-size: 14px;
+    color: var(--accent-color);
+  }
+  @include tablet {
+    padding-top: 32px;
+    font-size: 14px;
     line-height: 1.14;
-}
-}
-
-.connect {
-  margin-left: auto;
-  padding-top: 0;
-  display: none;
-  @include tablet
-  { 
-   display: flex;
- }
+  }
 }
 
 .connect__list {
-  @include tablet
-  { display: flex;
- }
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    display: none;
+  }
+
+  @include tablet {
+   display: block;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+  }
+
   @include desktop {
     display: flex;
     align-items: center;
   }
-
 }
 
 .connect__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-    @include tablet {
-      // margin: 0;
-    }
-  }
   @include desktop {
-    margin-right: 50px;
-
-  }
+     &:not(:last-child) { 
+       margin-right: 50px;
+    }
+ }
 }
 
 .line {
@@ -137,7 +147,6 @@
   border-radius: 2px;
 }
 
-
 .connect__tell {
   display: flex;
   align-items: center;
@@ -151,13 +160,13 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  color: #2196f3;
-}
-@media screen and (min-width: 768px) and (max-width: 1200px){
+    color: #2196f3;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     font-size: 12px;
     line-height: 1.16;
-}}
-
+  }
+}
 
 .connect__mail {
   @extend %alight-list;
@@ -174,14 +183,13 @@
     color: #2196f3;
   }
   @include tablet {
-   align-items: center;
+    align-items: center;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px){
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     font-size: 12px;
     line-height: 1.16;
-}
   }
-
+}
 
 .connect__icon {
   display: inline-flex;
@@ -200,6 +208,8 @@
   position: relative;
   padding: 0;
   margin-left: auto;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 1);
   @include tablet {
     display: none;
   }
@@ -223,7 +233,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  >.container {
+  > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -241,6 +251,8 @@
   display: block;
   margin-left: auto;
   margin-top: 21px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 1);
   @include tablet {
     display: none;
   }
@@ -256,6 +268,10 @@
   background: #ffffff;
   border-radius: 4px;
   border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .mob__menu__item:not(:last-child) {
@@ -263,13 +279,13 @@
 }
 
 .mob__menu__link {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 1.6;
-letter-spacing: 0.02em;
-color: #212121;;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .mob__connect {
@@ -280,43 +296,40 @@ color: #212121;;
   margin-bottom: 32px;
 }
 
-
 .mob__connect__mail {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #757575;
-
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .mob__connect__tell {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.2;
-  letter-spacing: 0.02em; 
-  color: #2196F3;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .mob__soc__list {
   display: flex;
-
 }
 
 .mob__soc__item:not(last-child) {
   margin-right: 20px;
 }
 
-.mob__soc__link { 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.2x;
-letter-spacing: 0.02em;
-color: #2196F3;
+.mob__soc__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2x;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
