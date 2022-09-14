@@ -65,9 +65,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -160,12 +160,6 @@ body {
     margin-right: 88px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .header-logo {
-    margin-right: 93px;
-  }
-}
-
 .navigation {
   display: none;
 }
@@ -246,6 +240,11 @@ body {
 @media screen and (min-width: 1200px) {
   .connect__item:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .connect__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -495,6 +494,12 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .button-logo {
   font-family: "Roboto";
@@ -557,9 +562,17 @@ body {
   background-color: var(--accent-color);
 }
 
-.about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .about__box {
@@ -578,6 +591,22 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+@media screen and (min-width: 480px) {
+  .about__title {
+    text-align: left;
+    width: 450px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    width: 100%;
+  }
+}
 
 .about__pretitle {
   font-weight: 700;
@@ -592,6 +621,7 @@ body {
 @media screen and (min-width: 480px) {
   .about__pretitle {
     text-align: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -649,7 +679,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .button-one {
-    padding: 200px 200px;
+    margin-bottom: 118px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -699,6 +729,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .button-one__pretitle {
+    max-width: 360px;
     line-height: 1.6;
   }
 }
@@ -758,6 +789,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     background-color: var(--main-white-color);
+    margin-top: 118px;
   }
 }
 
@@ -828,6 +860,15 @@ body {
   margin-right: auto;
   padding: 0;
 }
+@media screen and (min-width: 480px) {
+  .teamphoto-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .team .team-title {
   -webkit-box-pack: center;
@@ -873,9 +914,12 @@ body {
 }
 
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--background-primary-gray);
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -1191,7 +1235,6 @@ body {
 
 .footmain {
   padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
 }
 @media screen and (min-width: 768px) {
@@ -1247,10 +1290,20 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footmain__add:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footmain__add {
     margin-bottom: 60px;
     text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footmain__add:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1369,7 +1422,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: rgba(255, 255, 255, 0.6);
-  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .footer-form input[type=email] {
@@ -1386,11 +1438,16 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form input[type=email] {
     width: 358px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

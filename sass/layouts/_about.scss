@@ -1,6 +1,14 @@
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @include mobile {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @include tablet {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
   }
 
   .about__box {
@@ -17,7 +25,19 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    @include mobile{
+      text-align: left;
+      width: 450px;
+      height: 50px;
   }
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    width: 100%;
+  }
+}
 
   .about__pretitle {
     font-weight: 700;
@@ -30,6 +50,7 @@
       margin-bottom: 10px;
       @media screen and (min-width: 480px){
         text-align: center;
+        width: 100%;
       }
       @media screen and (min-width: 768px){
         text-align: left; 

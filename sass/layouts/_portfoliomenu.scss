@@ -1,6 +1,10 @@
 .menu {
   padding-top: 94px;
   padding-bottom: 94px;
+  @include tablet {
+    padding-top: 60px;
+  padding-bottom: 60px;
+  }
 }
 
 .button-logo {
