@@ -10,9 +10,21 @@
   --logo-company-color: #afb1b8;
 }
 
-ul {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
-  padding-left: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -59,25 +71,30 @@ body {
   }
 }
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 480px;
+@media screen and (min-width: 480px) {
+  .container .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .container .container {
     width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container .container {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -659,13 +676,13 @@ body {
   display: flex;
   background-color: var(--main-footer-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center top;
+  background-size: 480px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .button-one {
     padding: 118px 60px;
     background-size: cover;
@@ -688,22 +705,10 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
-  .button-one {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-  }
-}
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .button-one {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-tablet-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet-2x.jpg);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button-one {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1136,9 +1141,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1235,8 +1239,11 @@ body {
 
 .footmain {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+  text-align: center;
 }
+
 @media screen and (min-width: 768px) {
   .footmain-container {
     display: -webkit-box;
@@ -1244,11 +1251,11 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1259,17 +1266,12 @@ body {
   }
 }
 
-.studio-logofoot {
-  color: var(--main-white-color);
-}
-
 .footer-logo {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
-  .footer-logo {
-    margin: 0px;
-  }
+
+.studio-logofoot {
+  color: var(--main-white-color);
 }
 
 .map-google {
@@ -1290,14 +1292,8 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .footmain__add:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footmain__add {
-    margin-bottom: 60px;
     text-align: left;
   }
 }
@@ -1315,6 +1311,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.footmain-adress {
+  margin-bottom: 8px;
 }
 
 .address {
@@ -1326,6 +1327,7 @@ body {
 .welcome {
   margin-bottom: 60px;
 }
+
 .welcome-title {
   display: block;
   margin: 0;
@@ -1371,17 +1373,6 @@ body {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
 .footer-form__icon {
   display: inline-block;
   margin-left: 10px;
@@ -1396,12 +1387,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .form-title {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .form-title {
@@ -1422,24 +1408,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 480px) {
-  .footer-form input[type=email] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768x) {
-  .footer-form input[type=email] {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
+  width: 100%;
+  display: block;
 }
 @media screen and (min-width: 1200px) {
   .footer-form input[type=email] {
