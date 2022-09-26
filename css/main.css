@@ -79,15 +79,11 @@ body {
 @media screen and (min-width: 480px) {
   .container .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container .container {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -669,6 +665,9 @@ body {
 }
 
 .button-one {
+  padding: 118px 60px;
+  padding-bottom: 198px;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,23 +677,12 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 480px;
+  background-size: cover;
 }
-@media screen and (max-width: 480px) {
-  .button-one {
-    padding: 118px 60px;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button-one {
     padding: 118px 204px;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button-one {
-    margin-bottom: 118px;
+    padding-bottom: 198px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1261,11 +1249,19 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
 .footer-logo {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-right: 93px;
+  }
 }
 
 .studio-logofoot {
@@ -1406,16 +1402,21 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  display: block;
+  width: 450px;
+}
+@media screen and (max-width: 379px) {
+  .footer-form input[type=email] {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-form input[type=email] {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form input[type=email] {
     width: 358px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -1424,16 +1425,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
