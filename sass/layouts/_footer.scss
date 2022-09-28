@@ -15,7 +15,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    // gap: 70px;
+    gap: 70px;
     align-items: baseline;
   }
 }
@@ -38,6 +38,14 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
+  margin-bottom: 9px;
+}
+
+.map-name {
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 
 .web {
@@ -52,12 +60,6 @@
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
-
-  @include tablet {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
 }
 
 .footmain-adress {
@@ -68,16 +70,20 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 10px;
 }
 
-.footmain-adress {
+.footmain-item:not(:last-child) {
   margin-bottom: 8px;
+  @include desktop {
+  &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
 }
 
 .address {
   display: inline-block;
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
   text-align: center;
 }
 
@@ -142,6 +148,13 @@
   margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
     text-align: left;
+  }
+}
+
+.footer-form {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
   }
 }
 

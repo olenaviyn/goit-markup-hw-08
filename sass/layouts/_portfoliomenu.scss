@@ -1,9 +1,13 @@
 .menu {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
   @include tablet {
     padding-top: 60px;
-  padding-bottom: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -14,11 +18,10 @@
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--dark-main-color);
-
   display: flex;
   gap: 15px 8px;
   list-style: none;
-  margin-bottom: 50px;
+  display: flex;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
@@ -28,7 +31,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: nowrap;
     justify-content: center;
-
     margin-bottom: 30px;
   }
 
@@ -37,10 +39,6 @@
     margin-bottom: 50px;
   }
 }
-
-// .button-logo .item:not(:last-child) {
-//   margin-right: 8px;
-// }
 
 .button-item {
   font-family: "Roboto";

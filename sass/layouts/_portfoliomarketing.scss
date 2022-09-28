@@ -20,6 +20,12 @@
   overflow: hidden;
 }
 
+// img {
+//   @include tablet {
+//     height: 294px;
+//   }
+// }
+
 .marketing {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +34,6 @@
 }
 
 .marketing-item {
-  width: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -66,7 +71,6 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms linear;
-  overflow: auto;
   .marketing-item:hover & {
     transform: translateY(0%);
   }
