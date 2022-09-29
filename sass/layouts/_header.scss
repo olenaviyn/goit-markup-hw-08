@@ -1,37 +1,31 @@
 .header {
- padding-top: 15px;
- padding-bottom: 15px;
- border-bottom: 1px solid #ececec;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ececec;
 
- @include tablet {
-  padding-top: 26px;
-  padding-bottom: 26p;
- }
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
- @include desktop {
-  padding-top: 24px;
-  padding-bottom: 24px;
- }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header__container {
   display: flex;
-  @include tablet {
-    margin-left: auto;
-  }
-  @media screen and (min-width: 320px) and (max-width: 479px)
-   {
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-@include mobile {
   justify-content: space-between;
   align-items: center;
-}
-  @include desktop {
-    display: flexbox;
-  }
+
+  // @include mobile {
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+  // @include desktop {
+  //   display: flex;
+  // }
 }
 
 .logo {
@@ -52,12 +46,12 @@
 }
 
 .header-logo {
-  @media screen and (min-width: 768x) {
+  display: flex;
+  @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
 
   @media screen and (min-width: 1200px) {
-
   }
 }
 
@@ -65,7 +59,6 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
     display: block;
@@ -75,13 +68,6 @@
 .navigation__list {
   display: flex;
   align-items: center;
-  @mixin tablet {
-    display: flex;
-  }
-  @mixin desktop {
-    margin-left: 93px;
-    display: flex;
-  }
 }
 
 .navigation__item:not(:last-child) {
@@ -89,32 +75,42 @@
 }
 
 .navigation__link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
-  color: var(--dark-main-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+
   @include tablet {
-    padding-top: 32px;
-    font-size: 14px;
     line-height: 1.14;
   }
 }
 
-.connect__list {
-  @media screen and (min-width: 320px) and (max-width: 767px){
-    display: none;
+.current-page-link {
+  position: relative;
+  color: #2196f3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -29px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 2px;
   }
+}
+
+.connect__list {
+  display: none;
 
   @include tablet {
-   display: block;
+    display: block;
     flex-wrap: wrap;
     gap: 10px;
     margin-left: auto;
@@ -127,36 +123,16 @@
 }
 
 .connect__item {
- @include tablet {
-  &:not(:last-child) { 
-    margin-bottom: 10px;
- }
-}
-@include desktop {
-  &:not(:last-child) { 
-    margin-right: 30px;
- }
-}
-}
-
-.line {
-  position: relative;
-  color: #2196f3;
-}
-
-.current::after {
-  
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 4px;
-  bottom: -0.5px;
-  left: 0;
-  bottom: -29px;
-  background-color: var(--accent-color);
-  border: none;
-  border-radius: 2px;
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .connect__tell {
@@ -238,13 +214,14 @@
 
 .mob__menu {
   display: flex;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+
   > .container {
     height: 100%;
     display: flex;
@@ -252,9 +229,6 @@
     justify-content: space-between;
   }
   @include tablet {
-    display: none;
-  }
-  @include desktop {
     display: none;
   }
 }

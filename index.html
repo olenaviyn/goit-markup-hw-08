@@ -27,7 +27,9 @@
         <nav class="navigation">
           <ul class="navigation__list list link">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link line current link title"
+              <a
+                href="./index.html"
+                class="navigation__link current-page-link link title"
                 >Студія</a
               >
             </li>
@@ -41,39 +43,40 @@
             </li>
           </ul>
         </nav>
-          <ul class="connect__list list">
-            <li class="connect__item">
-              <a href="mailto:info@devstudio.com" class="connect__mail link">
-                <svg class="connect__icon" width="16" height="12">
-                  <use href="./images/symbol.svg#icon-envelope-1"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="connect__item">
-              <a href="tel:+380991111111" class="connect__tell link">
-                <svg class="connect__icon" width="10" height="16">
-                  <use href="./images/symbol.svg#icon-smartphone-1"></use>
-                </svg>
-                +38 099 111 111 1</a
-              >
-            </li>
-          </ul>
-       
-          <div>
+        <ul class="connect__list list">
+          <li class="connect__item">
+            <a href="mailto:info@devstudio.com" class="connect__mail link">
+              <svg class="connect__icon" width="16" height="12">
+                <use href="./images/symbol.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="connect__item">
+            <a href="tel:+380991111111" class="connect__tell link">
+              <svg class="connect__icon" width="10" height="16">
+                <use href="./images/symbol.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 099 111 111 1</a
+            >
+          </li>
+        </ul>
+
         <button type="button" class="menu__open__btn" data-menu-open>
           <svg class="open__icon" width="40" height="40">
             <use href="./images/symbol.svg#icon-menu_40px"></use>
           </svg>
         </button>
       </div>
-        <div class="mob__menu is-hidden" data-menu>
-          <div class="container">
-            <div class="mob-menu-top">
-          <button type="button" class="menu__close__btn" data-menu-close>
-            <svg class="close__icon" width="30" height="30">
-              <use href="./images/symbol.svg#icon-close-black-18dp-2-1-1"></use>
-            </svg>
+      <div class="mob__menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu__close__btn" data-menu-close>
+              <svg class="close__icon" width="30" height="30">
+                <use
+                  href="./images/symbol.svg#icon-close-black-18dp-2-1-1"
+                ></use>
+              </svg>
             </button>
             <nav class="mob__menu__navigation">
               <ul class="mob__menu__list list link">
@@ -92,22 +95,30 @@
                 </li>
               </ul>
             </nav>
-            </div>
-            <div class="mob__connect">
-              <div class="mob-menu-top">
+          </div>
+          <div class="mob__connect">
+            <div class="mob-menu-top">
               <ul class="mob__connect__list list">
                 <li class="mob__connect__item">
-                  <a href="tel:+380991111111" class="mob__connect__tell mob__menu__item link">
-                    +38 099 111 111 1</a
+                  <a
+                    href="tel:+380991111111"
+                    class="mob__connect__tell mob__menu__item link"
                   >
+                    +38 099 111 111 1
+                  </a>
                 </li>
                 <li class="mob__connect__item">
-                  <a href="mailto:info@devstudio.com" class="mob__connect__mail link">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob__connect__mail link"
+                  >
                     info@devstudio.com
                   </a>
-                  </div>
+                </li>
+              </ul>
             </div>
-          </ul>
+          </div>
+
           <ul class="mob__soc__list list">
             <li class="mob__soc__item">
               <a
@@ -146,13 +157,15 @@
               >
             </li>
           </ul>
-          </div>
-        </header>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="button-one">
         <div class="container">
           <h1 class="button-one__pretitle">
-            Ефективні рішення для вашого бізнесу
+            <span>Ефективні рішення</span>
+            <span>для вашого бізнесу</span>
           </h1>
           <button type="button" class="button-one__title" data-modal-open>
             Замовити послугу
@@ -161,7 +174,7 @@
       </section>
       <section class="about">
         <div class="container">
-          <h1 class="visually-hidden">about</h1>
+          <h2 class="visually-hidden">about</h2>
           <ul class="about__list list">
             <li class="about__item">
               <div class="about__box">
@@ -220,13 +233,15 @@
             <li class="whoweare__item">
               <picture>
                 <source
-                srcset="./images/ab-mob-1x.jpg 1x, ./images/ab-mob-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="./images/ab-mob-1x.jpg 1x, ./images/ab-mob-2x.jpg 2x"
+                  media="(min-width:1200px)"
                 />
                 <img
-              src="./images/ab-mob-2x.jpg" alt="заняття студії"
-              width="370"
-              height="294"/>
+                  src="./images/ab-mob-2x.jpg"
+                  alt="заняття студії"
+                  width="370"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/about-img-1.jpg"
@@ -239,13 +254,18 @@
             <li class="whoweare__item">
               <picture>
                 <source
-                srcset="./images/about-desktop-1x.jpg 1x, ./images/about-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/about-desktop-1x.jpg 1x,
+                    ./images/about-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <img
-              src="./images/about-desktop-2x.jpg" alt="заняття"
-              width="370"
-              height="294"/>
+                  src="./images/about-desktop-2x.jpg"
+                  alt="заняття"
+                  width="370"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/about-img-2.jpg"
@@ -258,13 +278,18 @@
             <li class="whoweare__item">
               <picture>
                 <source
-                srcset="./images/abt-desktop-1x.jpg 1x, ./images/abt-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/abt-desktop-1x.jpg 1x,
+                    ./images/abt-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <img
-              src="./images/abt-desktop-2x.jpg" alt="заняття"
-              width="370"
-              height="294"/>
+                  src="./images/abt-desktop-2x.jpg"
+                  alt="заняття"
+                  width="370"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/about-img-3.jpg"
@@ -284,21 +309,32 @@
             <li class="team-photo">
               <picture>
                 <source
-                srcset="./images/ihor-desktop-1x.jpg 1x, ./images/ihor-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/ihor-desktop-1x.jpg 1x,
+                    ./images/ihor-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <source
-                srcset="./images/ihor-tablet-1x.jpg 1x, ./images/ihor-tablet-2x.jpg 2x"
-                media="(min-width:768px)"
+                  srcset="
+                    ./images/ihor-tablet-1x.jpg 1x,
+                    ./images/ihor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
                 />
                 <source
-                srcset="./images/ihor-mob-1x.jpg 1x, ./images/ihor-mob-2x.jpg 2x"
-                media="(max-width:767px)"
+                  srcset="
+                    ./images/ihor-mob-1x.jpg 1x,
+                    ./images/ihor-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
                 />
                 <img
-              src="./images/ihor-mob-2x.jpg" alt="ігор"
-              width="450"
-              height="294"/>
+                  src="./images/ihor-mob-2x.jpg"
+                  alt="ігор"
+                  width="450"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/ihog-img.jpg"
@@ -342,21 +378,32 @@
             <li class="team-photo">
               <picture>
                 <source
-                srcset="./images/olga-desktop-1x.jpg 1x, ./images/olga-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/olga-desktop-1x.jpg 1x,
+                    ./images/olga-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <source
-                srcset="./images/olga-tablet-1x.jpg 1x, ./images/olga-tablet-2x.jpg 2x"
-                media="(min-width:768px)"
+                  srcset="
+                    ./images/olga-tablet-1x.jpg 1x,
+                    ./images/olga-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
                 />
                 <source
-                srcset="./images/olga-mob-1x.jpg 1x, ./images/olga-mob-2x.jpg 2x"
-                media="(max-width:767px)"
+                  srcset="
+                    ./images/olga-mob-1x.jpg 1x,
+                    ./images/olga-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
                 />
                 <img
-              src="./images/olga-mob-2x.jpg" alt="ольга"
-              width="450"
-              height="294"/>
+                  src="./images/olga-mob-2x.jpg"
+                  alt="ольга"
+                  width="450"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/olga-img.jpg"
@@ -400,21 +447,32 @@
             <li class="team-photo">
               <picture>
                 <source
-                srcset="./images/mykola-desktop-1x.jpg 1x, ./images/mykola-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/mykola-desktop-1x.jpg 1x,
+                    ./images/mykola-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <source
-                srcset="./images/mykola-tablet-1x.jpg 1x, ./images/mykola-tablet-2x.jpg 2x"
-                media="(min-width:768px)"
+                  srcset="
+                    ./images/mykola-tablet-1x.jpg 1x,
+                    ./images/mykola-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
                 />
                 <source
-                srcset="./images/mykola-mob-1x.jpg 1x, ./images/mykola-mob-2x.jpg 2x"
-                media="(max-width:767px)"
+                  srcset="
+                    ./images/mykola-mob-1x.jpg 1x,
+                    ./images/mykola-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
                 />
                 <img
-              src="./images/mykola-mob-2x.jpg" alt="микола"
-              width="450"
-              height="294"/>
+                  src="./images/mykola-mob-2x.jpg"
+                  alt="микола"
+                  width="450"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/mykola-img.jpg"
@@ -458,21 +516,32 @@
             <li class="team-photo">
               <picture>
                 <source
-                srcset="./images/misha-desktop-1x.jpg 1x, ./images/misha-desktop-2x.jpg 2x"
-                media="(min-width:1200px)"
+                  srcset="
+                    ./images/misha-desktop-1x.jpg 1x,
+                    ./images/misha-desktop-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
                 <source
-                srcset="./images/misha-tablet-1x.jpg 1x, ./images/misha-tablet-2x.jpg 2x"
-                media="(min-width:768px)"
+                  srcset="
+                    ./images/misha-tablet-1x.jpg 1x,
+                    ./images/misha-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
                 />
                 <source
-                srcset="./images/misha-mob-1x.jpg 1x, ./images/misha-mob-2x.jpg 2x"
-                media="(max-width:767px)"
+                  srcset="
+                    ./images/misha-mob-1x.jpg 1x,
+                    ./images/misha-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
                 />
                 <img
-              src="./images/misha-mob-2x.jpg" alt="михайло"
-              width="450"
-              height="294"/>
+                  src="./images/misha-mob-2x.jpg"
+                  alt="михайло"
+                  width="450"
+                  height="294"
+                />
               </picture>
               <!-- <img
                 src="./images/myhaylo-img.jpg"
@@ -515,7 +584,7 @@
             </li>
           </ul>
         </div>
-        </section>
+      </section>
       <section class="clients">
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
@@ -579,7 +648,7 @@
               class="map-google link"
               target="_blank"
               rel="noopener nofollow noreferrer"
-              >
+            >
               <p class="map-name">м. Київ, пр-т Лесі Українки, 26</p></a
             >
             <ul class="footmain-list list">
@@ -631,23 +700,20 @@
             </li>
           </ul>
         </div>
-        <div class="form">
+        <div class="footer-subscribe-form-wrapper">
           <p class="form-title">Підпишіться на розсилку</p>
-          <form class="form-modal" autocomplete="off">
-            <div class="footer-form">
-              <label for="mail"></label>
-              <input type="email" name="email" id="mail" placeholder="E-mail" />
-              <button class="footer-form__button" type="submit">
-                Підписатися
-                <svg class="footer-form__icon" width="24" height="24">
-                  <use href="./images/symbol.svg#icon-icon-send-1"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="footer-form" autocomplete="off">
+            <label for="mail"></label>
+            <input type="email" name="email" id="mail" placeholder="E-mail" />
+            <button class="footer-form__button" type="submit">
+              Підписатися
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/symbol.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
-    </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
