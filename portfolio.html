@@ -24,8 +24,8 @@
       <div class="container header__container">
         <a href="./index.html" class="header-logo link logo">
           <span class="web-logo">Web</span
-          ><span class="studio-logo">Studio</span></a
-        >
+          ><span class="studio-logo">Studio</span>
+        </a>
         <nav class="navigation">
           <ul class="navigation__list list link">
             <li class="navigation__item">
@@ -34,7 +34,9 @@
               >
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link line current link title"
+              <a
+                href="./portfolio.html"
+                class="navigation__link current-page-link link title"
                 >Портфоліо</a
               >
             </li>
@@ -43,111 +45,122 @@
             </li>
           </ul>
         </nav>
-          <ul class="connect__list list">
-            <li class="connect__item">
-              <a href="http://mailto:info@devstudio." class="connect__mail link"
-                ><svg class="connect__icon" width="16" height="12">
-                  <use href="./images/symbol.svg#icon-envelope-1"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="connect__item">
-              <a href="tel:+380991111111" class="connect__tell link">
-                <svg class="connect__icon" width="10" height="16">
-                  <use href="./images/symbol.svg#icon-smartphone-1"></use>
-                </svg>
-                +38 099 111 111 1
-              </a>
-            </li>
-          </ul>
+        <ul class="connect__list list">
+          <li class="connect__item">
+            <a href="mailto:info@devstudio.com" class="connect__mail link">
+              <svg class="connect__icon" width="16" height="12">
+                <use href="./images/symbol.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="connect__item">
+            <a href="tel:+380991111111" class="connect__tell link">
+              <svg class="connect__icon" width="10" height="16">
+                <use href="./images/symbol.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 099 111 111 1</a
+            >
+          </li>
+        </ul>
+
+        <button type="button" class="menu__open__btn" data-menu-open>
+          <svg class="open__icon" width="40" height="40">
+            <use href="./images/symbol.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
-      <button type="button" class="menu__open__btn" data-menu-open>
-        <svg class="open__icon" width="40" height="40">
-          <use href="./images/symbol.svg#icon-menu_40px"></use>
-        </svg>
-      </button>
-    
       <div class="mob__menu is-hidden" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-        <button type="button" class="menu__close__btn" data-menu-close>
-          <svg class="close__icon" width="30" height="30">
-            <use href="./images/symbol.svg#icon-close-black-18dp-2-1-1"></use>
-          </svg>
-          </button>
-          <nav class="mob__menu__navigation">
-            <ul class="mob__menu__list list link">
-              <li class="mob__menu__item">
-                <a href="./index.html" class="mob__menu__link line link"
-                  >Студія</a
-                >
-              </li>
-              <li class="mob__menu__item">
-                <a href="./portfolio.html" class="mob__menu__link link"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="mob__menu__item">
-                <a href="" class="mob__menu__link link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
+            <button type="button" class="menu__close__btn" data-menu-close>
+              <svg class="close__icon" width="30" height="30">
+                <use
+                  href="./images/symbol.svg#icon-close-black-18dp-2-1-1"
+                ></use>
+              </svg>
+            </button>
+            <nav class="mob__menu__navigation">
+              <ul class="mob__menu__list list link">
+                <li class="mob__menu__item">
+                  <a href="./index.html" class="mob__menu__link line link"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob__menu__item">
+                  <a href="./portfolio.html" class="mob__menu__link link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob__menu__item">
+                  <a href="" class="mob__menu__link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="mob__connect">
             <div class="mob-menu-top">
-            <ul class="mob__connect__list list">
-              <li class="mob__connect__item">
-                <a href="tel:+380991111111" class="mob__connect__tell mob__menu__item link">
-                  +38 099 111 111 1</a
-                >
-              </li>
-              <li class="mob__connect__item">
-                <a href="mailto:info@devstudio.com" class="mob__connect__mail link">
-                  info@devstudio.com
-                </a>
-                </div>
+              <ul class="mob__connect__list list">
+                <li class="mob__connect__item">
+                  <a
+                    href="tel:+380991111111"
+                    class="mob__connect__tell mob__menu__item link"
+                  >
+                    +38 099 111 111 1
+                  </a>
+                </li>
+                <li class="mob__connect__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob__connect__mail link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </ul>
-        <ul class="mob__soc__list list">
-          <li class="mob__soc__item">
-            <a
-              href=""
-              class="mob__soc__link link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Instagram</a
-            >
-          </li>
-          <li class="mob__soc__item">
-            <a
-              href=""
-              class="mob__soc__link link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Twitter</a
-            >
-          </li>
-          <li class="mob__soc__item">
-            <a
-              href=""
-              class="mob__soc__link link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Facebook</a
-            >
-          </li>
-          <li class="mob__soc__item">
-            <a
-              href=""
-              class="mob__soc__link link"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+
+          <ul class="mob__soc__list list">
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="mob__soc__item">
+              <a
+                href=""
+                class="mob__soc__link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
     <main>
       <section class="menu">
@@ -173,21 +186,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/techno-desktop-1x.jpg 1x, ./images/techno-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/techno-desktop-1x.jpg 1x,
+                      ./images/techno-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/techno-tablet-1x.jpg 1x, ./images/techno-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/techno-tablet-1x.jpg 1x,
+                      ./images/techno-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/techno-mob-1x.jpg 1x, ./images/techno-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/techno-mob-1x.jpg 1x,
+                      ./images/techno-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/techno-mob-2x.jpg" alt="постер"
-                width="450"
-                height="294"/>
+                    src="./images/techno-mob-2x.jpg"
+                    alt="постер"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img
                   src="./images/technokryk.jpg"
@@ -210,21 +234,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/poster-desktop-1x.jpg 1x, ./images/poster-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/poster-desktop-1x.jpg 1x,
+                      ./images/poster-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/poster-tablet-1x.jpg 1x, ./images/poster-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/poster-tablet-1x.jpg 1x,
+                      ./images/poster-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/poster-mob-1x.jpg 1x, ./images/poster-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/poster-mob-1x.jpg 1x,
+                      ./images/poster-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/poster-mob-2x.jpg" alt="постер"
-                width="450"
-                height="294"/>
+                    src="./images/poster-mob-2x.jpg"
+                    alt="постер"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img
                 src="./images/poster.jpg" alt="постер" /> -->
@@ -235,7 +270,7 @@
                 </p>
               </div>
               <div class="markdiv">
-                <h3 class="title-marketing">
+                <h3 class="marketing-title">
                   Постер New Orlean vs Golden Star
                 </h3>
                 <p class="marketing-pre">Дизайн</p>
@@ -245,21 +280,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/rest-desktop-1x.jpg 1x, ./images/rest-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/rest-desktop-1x.jpg 1x,
+                      ./images/rest-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/rest-tablet-1x.jpg 1x, ./images/rest-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/rest-tablet-1x.jpg 1x,
+                      ./images/rest-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/rest-mob-1x.jpg 1x, ./images/rest-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/rest-mob-1x.jpg 1x,
+                      ./images/rest-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/rest-mob-2x.jpg" alt="ресторан"
-                width="450"
-                height="294"/>
+                    src="./images/rest-mob-2x.jpg"
+                    alt="ресторан"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/restuarant.jpg" alt="ресторан" /> -->
                 <p class="marketing-text">
@@ -277,21 +323,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/headphone-desktop-1x.jpg 1x, ./images/headphone-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/headphone-desktop-1x.jpg 1x,
+                      ./images/headphone-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/headphone-tablet-1x.jpg 1x, ./images/headphone-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/headphone-tablet-1x.jpg 1x,
+                      ./images/headphone-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/headphone-mob-1x.jpg 1x, ./images/headphone-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/headphone-mob-1x.jpg 1x,
+                      ./images/headphone-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/headphone-mob-2x.jpg" alt="навушники"
-                width="450"
-                height="294"/>
+                    src="./images/headphone-mob-2x.jpg"
+                    alt="навушники"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/prime.jpg" alt="прайм" /> -->
                 <p class="marketing-text">
@@ -309,21 +366,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/box-desktop-1x.jpg 1x, ./images/box-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/box-desktop-1x.jpg 1x,
+                      ./images/box-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/box-tablet-1x.jpg 1x, ./images/box-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/box-tablet-1x.jpg 1x,
+                      ./images/box-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/box-mob-1x.jpg 1x, ./images/box-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/box-mob-1x.jpg 1x,
+                      ./images/box-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/box-mob-2x.jpg" alt="коробочка"
-                width="450"
-                height="294"/>
+                    src="./images/box-mob-2x.jpg"
+                    alt="коробочка"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/boxes.jpg" alt="коробочка" /> -->
                 <p class="marketing-text">
@@ -341,21 +409,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/monitor-desktop-1x.jpg 1x, ./images/monitor-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/monitor-desktop-1x.jpg 1x,
+                      ./images/monitor-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/monitor-tablet-1x.jpg 1x, ./images/monitor-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/monitor-tablet-1x.jpg 1x,
+                      ./images/monitor-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/monitor-mob-1x.jpg 1x, ./images/monitor-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/monitor-mob-1x.jpg 1x,
+                      ./images/monitor-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/monitor-mob-2x.jpg" alt="монітор"
-                width="450"
-                height="294"/>
+                    src="./images/monitor-mob-2x.jpg"
+                    alt="монітор"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/inspiration.jpg" alt="монітор" /> -->
                 <p class="marketing-text">
@@ -373,21 +452,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/magazine-desktop-1x.jpg 1x, ./images/magazine-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/magazine-desktop-1x.jpg 1x,
+                      ./images/magazine-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/magazine-tablet-1x.jpg 1x, ./images/magazine-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/magazine-tablet-1x.jpg 1x,
+                      ./images/magazine-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/magazine-mob-1x.jpg 1x, ./images/magazine-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/magazine-mob-1x.jpg 1x,
+                      ./images/magazine-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/magazine-mob-2x.jpg" alt="видання"
-                width="450"
-                height="294"/>
+                    src="./images/magazine-mob-2x.jpg"
+                    alt="видання"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/edition.jpg" alt="видання" /> -->
                 <p class="marketing-text">
@@ -405,21 +495,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/package-desktop-1x.jpg 1x, ./images/package-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/package-desktop-1x.jpg 1x,
+                      ./images/package-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/package-tablet-1x.jpg 1x, ./images/package-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/package-tablet-1x.jpg 1x,
+                      ./images/package-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/package-mob-1x.jpg 1x, ./images/package-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/package-mob-1x.jpg 1x,
+                      ./images/package-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/package-mob-2x.jpg" alt="пакет"
-                width="450"
-                height="294"/>
+                    src="./images/package-mob-2x.jpg"
+                    alt="пакет"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/lab.jpg" alt="проект лаб" /> -->
                 <p class="marketing-text">
@@ -437,21 +538,32 @@
               <div class="marketing-wrap">
                 <picture>
                   <source
-                  srcset="./images/laptop-desktop-1x.jpg 1x, ./images/laptop-desktop-2x.jpg 2x"
-                  media="(min-width:1200px)"
+                    srcset="
+                      ./images/laptop-desktop-1x.jpg 1x,
+                      ./images/laptop-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
                   />
                   <source
-                  srcset="./images/laptop-tablet-1x.jpg 1x, ./images/laptop-tablet-2x.jpg 2x"
-                  media="(min-width:768px)"
+                    srcset="
+                      ./images/laptop-tablet-1x.jpg 1x,
+                      ./images/laptop-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
                   />
                   <source
-                  srcset="./images/laptop-mob-1x.jpg 1x, ./images/laptop-mob-2x.jpg 2x"
-                  media="(max-width:767px)"
+                    srcset="
+                      ./images/laptop-mob-1x.jpg 1x,
+                      ./images/laptop-mob-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
                   />
                   <img
-                src="./images/laptop-mob-2x.jpg" alt="ноут"
-                width="450"
-                height="294"/>
+                    src="./images/laptop-mob-2x.jpg"
+                    alt="ноут"
+                    width="450"
+                    height="294"
+                  />
                 </picture>
                 <!-- <img src="./images/growing.jpg" alt="грувинг" /> -->
                 <p class="marketing-text">
@@ -471,72 +583,72 @@
     </main>
     <footer class="footmain">
       <div class="container footmain-container">
-      <div class="footmain__add">
-        <a href="WebStudio" class="footer-logo web link logo">
-          <span class="web-logo">Web</span
-          ><span class="studio-logofoot">Studio</span>
-        </a>
-        <address class="footmain-address">
-          <ul class="list">
-          <a
-            href="https://goo.gl/maps/koh7NdNNXK6s5RCy7"
-            class="map-google link"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            ><p class="map-name">м. Київ, пр-т Лесі Українки, 26</p></a
-          >
-            <li class="footmain-item">
-              <a
-                href="mailto:info@example.com"
-                class="footmain-adress list link"
-                >info@example.com</a
-              >
+        <div class="footmain__add">
+          <a href="WebStudio" class="footer-logo web link logo">
+            <span class="web-logo">Web</span
+            ><span class="studio-logofoot">Studio</span>
+          </a>
+          <address class="footmain-address">
+            <a
+              href="https://goo.gl/maps/koh7NdNNXK6s5RCy7"
+              class="map-google link"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <p class="map-name">м. Київ, пр-т Лесі Українки, 26</p></a
+            >
+            <ul class="footmain-list list">
+              <li class="footmain-item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footmain-adress list link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footmain-item">
+                <a href="tel:+380991111111" class="footmain-adress link"
+                  >+38 099 111 111 1</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="welcome">
+          <p class="welcome-title">Приєднуйтесь</p>
+          <ul class="team-soc list">
+            <li class="team-soc-item">
+              <a href="" class="team-soc-join link">
+                <svg class="team-soc-icon1" width="20" height="20">
+                  <use href="./images/symbol.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footmain-item">
-              <a href="tel:+380991111111" class="footmain-adress link"
-                >+38 099 111 111 1</a
-              >
+            <li class="team-soc-item">
+              <a href="" class="team-soc-join link">
+                <svg class="team-soc-icon1" width="20" height="20">
+                  <use href="./images/symbol.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-join link">
+                <svg class="team-soc-icon1" width="20" height="20">
+                  <use href="./images/symbol.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item">
+              <a href="" class="team-soc-join link">
+                <svg class="team-soc-icon1" width="20" height="20">
+                  <use href="./images/symbol.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="welcome">
-        <p class="welcome-title">Приєднуйтесь</p>
-        <ul class="team-soc list">
-          <li class="team-soc-item">
-            <a href="" class="team-soc-join link">
-              <svg class="team-soc-icon1" width="20" height="20">
-                <use href="./images/symbol.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-soc-item">
-            <a href="" class="team-soc-join link">
-              <svg class="team-soc-icon1" width="20" height="20">
-                <use href="./images/symbol.svg#icon-twitter1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-soc-item">
-            <a href="" class="team-soc-join link">
-              <svg class="team-soc-icon1" width="20" height="20">
-                <use href="./images/symbol.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-soc-item">
-            <a href="" class="team-soc-join link">
-              <svg class="team-soc-icon1" width="20" height="20">
-                <use href="./images/symbol.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="form">
-        <p class="form-title">Підпишіться на розсилку</p>
-        <form class="form-modal" autocomplete="off">
-          <div class="footer-form">
+        </div>
+        <div class="footer-subscribe-form-wrapper">
+          <p class="form-title">Підпишіться на розсилку</p>
+          <form class="footer-form" autocomplete="off">
             <label for="mail"></label>
             <input type="email" name="email" id="mail" placeholder="E-mail" />
             <button class="footer-form__button" type="submit">
@@ -545,12 +657,10 @@
                 <use href="./images/symbol.svg#icon-icon-send-1"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
-  </footer>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/menu.js"></script>
   </body>
