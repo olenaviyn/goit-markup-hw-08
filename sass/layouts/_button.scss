@@ -1,7 +1,5 @@
 .button-one {
   padding: 118px 0 198px;
-  // padding: 118px 60px 198px;
-  // padding-bottom: 198px;
   background-size: cover;
   display: flex;
   background-color: var(--main-footer-color);
@@ -16,9 +14,7 @@
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
-    // padding: 118px 204px 198px;
     padding: 118px 0 198px;
-    // padding-bottom: 198px;
   }
 
   @include retina {
@@ -47,6 +43,9 @@
         ),
         url(../images/header-desktop-2x.jpg);
     }
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
   }
 }
 

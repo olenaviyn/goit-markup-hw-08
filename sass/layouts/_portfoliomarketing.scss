@@ -28,6 +28,9 @@
 }
 
 .marketing-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -43,6 +46,7 @@
   }  }
 
 .markdiv {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

@@ -59,6 +59,7 @@
 
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-bottom: auto;
   }
 }
 
@@ -88,6 +89,9 @@
 
 .welcome {
   margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: auto;
+  }
 }
 
 .welcome-title {
