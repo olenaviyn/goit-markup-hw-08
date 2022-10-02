@@ -1469,7 +1469,7 @@ body {
 
 .modal {
   position: relative;
-  max-height: 90vh;
+  min-height: 609px;
   width: 450px;
   background-color: var(--main-white-color);
   border-radius: 4px;
@@ -1493,6 +1493,7 @@ body {
 
 .backdrop {
   position: fixed;
+  overflow: scroll;
   top: 0%;
   left: 0%;
   width: 100%;
