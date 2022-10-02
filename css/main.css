@@ -1469,7 +1469,6 @@ body {
 .modal {
   position: relative;
   max-height: 90vh;
-  overflow-y: auto;
   width: 450px;
   background-color: var(--main-white-color);
   border-radius: 4px;
