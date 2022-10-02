@@ -1,11 +1,13 @@
 .modal {
   position: relative;
   min-height: 609px;
+  top: 40px;
   width: 450px;
   background-color: var(--main-white-color);
   border-radius: 4px;
   padding: 40px;
   transition: transform 250ms;
+
 @include desktop {
  position: absolute; 
   min-height: 581px;
