@@ -6,6 +6,7 @@
   --text-color: #757575;
   --main-footer-color: #2f303a;
   --background-primary-gray: #f5f4fa;
+  --white-header-color: #ececec;
   --background-primary-darck: rgba(47, 48, 58, 0.8);
   --logo-company-color: #afb1b8;
 }
@@ -200,7 +201,7 @@ body {
 
 .current-page-link {
   position: relative;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .current-page-link::after {
   content: "";
@@ -627,7 +628,7 @@ body {
   gap: 30px;
 }
 
-.button-one {
+.hero {
   padding: 118px 0 118px;
   background-size: cover;
   display: -webkit-box;
@@ -645,37 +646,37 @@ body {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .button-one {
+  .hero {
     padding: 118px 0 198px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .button-one {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-mob-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .button-one {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-tablet-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .button-one {
+  .hero {
     margin-left: auto;
     margin-right: auto;
     width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .button-one {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-desktop-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-desktop-2x.jpg);
   }
 }
 
-.button-one__pretitle {
+.hero__pretitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,22 +698,22 @@ body {
   line-height: 1.6;
 }
 @media screen and (min-width: 480px) {
-  .button-one__pretitle {
+  .hero__pretitle {
     line-height: 1.6;
   }
 }
 @media screen and (min-width: 768px) {
-  .button-one__pretitle {
+  .hero__pretitle {
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .button-one__pretitle {
+  .hero__pretitle {
     font-size: 44px;
   }
 }
 
-.button-one__title {
+.hero__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -731,7 +732,7 @@ body {
   padding: 10px 24px;
 }
 @media screen and (min-width: 1200px) {
-  .button-one__title {
+  .hero__title {
     padding: 10px 32px;
   }
 }

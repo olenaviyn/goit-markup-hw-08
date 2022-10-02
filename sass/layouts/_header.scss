@@ -81,7 +81,7 @@
 
 .current-page-link {
   position: relative;
-  color: #2196f3;
+  color: var(--accent-color);
 
   &::after {
     content: "";
