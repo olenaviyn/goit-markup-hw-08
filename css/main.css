@@ -357,6 +357,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 40px 48px;
 }
 .mob__menu > .container {
   height: 100%;
@@ -378,9 +379,13 @@ body {
 }
 
 .menu__close__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  cursor: pointer;
   display: block;
   margin-left: auto;
-  margin-top: 21px;
   background: transparent;
   border: 1px solid rgb(255, 255, 255);
 }
@@ -449,6 +454,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mob__soc__item:not(last-child) {
@@ -531,11 +538,9 @@ body {
   background-color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .about {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+.about {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -586,10 +591,10 @@ body {
   color: var(--dark-main-color);
   margin-top: 0px;
   margin-bottom: 10px;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .about__pretitle {
-    text-align: center;
     width: 100%;
   }
 }
@@ -623,7 +628,7 @@ body {
 }
 
 .button-one {
-  padding: 118px 0 198px;
+  padding: 118px 0 118px;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1462,16 +1467,28 @@ body {
 }
 
 .modal {
+  position: relative;
   max-height: 90vh;
   overflow-y: auto;
   width: 450px;
-  background-color: #ffffff;
+  background-color: var(--main-white-color);
   border-radius: 4px;
   padding: 40px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    min-height: 581px;
+    width: 528px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
 }
 
 .backdrop {
@@ -1514,10 +1531,8 @@ body {
 }
 
 .close {
-  position: relative;
-  top: -28px;
-  width: 30px;
-  margin-left: 370px;
+  position: absolute;
+  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;

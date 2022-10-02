@@ -1,12 +1,20 @@
 .modal {
+  position: relative;
   max-height: 90vh;
   overflow-y: auto;
   width: 450px;
-  background-color: #ffffff;
+  background-color: var(--main-white-color);
   border-radius: 4px;
   padding: 40px;
   transition: transform 250ms;
-
+@include desktop {
+  position: absolute;
+  min-height: 581px;
+  width: 528px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+}
 }
 
 .backdrop {
@@ -40,13 +48,12 @@
 }
 
 .close {
-  position: relative;
-  top: -28px;
-  width: 30px;
-  margin-left: 370px;
+  position: absolute;
+  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
+
   cursor: pointer;
   color: #000000;
   background-color: var(--main-white-color);
@@ -64,6 +71,10 @@
     border: 0.5px groove var(--background-primary-gray);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  // @media screen and (max-width: 1199px) {
+  //   right: 90px;
+  // }
 }
 
 .modal-close {

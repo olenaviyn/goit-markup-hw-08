@@ -215,6 +215,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 40px 48px;
 
   > .container {
     height: 100%;
@@ -228,9 +229,14 @@
 }
 
 .menu__close__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  cursor: pointer;
+
   display: block;
   margin-left: auto;
-  margin-top: 21px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
   @include tablet {
@@ -294,6 +300,7 @@
 
 .mob__soc__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob__soc__item:not(last-child) {
